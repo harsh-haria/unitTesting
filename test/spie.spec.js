@@ -4,7 +4,7 @@ var Student = require("../controllers/studentCtrl");
 
 var studentObj = new Student();
 
-describe("function return check", function () {
+describe("-------------spy--------------", function () {
 	it("test user function", () => {
 		expect(studentObj.userId()).to.be.equal(12);
 	});
