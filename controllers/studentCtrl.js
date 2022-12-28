@@ -14,6 +14,21 @@ class Student {
 	userId() {
 		return 12;
 	}
+
+	getInternal(total) {
+		return total - 1;
+	}
+
+	getExternal(total) {
+		return total + 1;
+	}
+
+	finalMarks(total) {
+		var external = this.getExternal(total);
+		var internal = this.getInternal(total);
+		var finalSum = external + internal + 10;
+		return finalSum;
+	}
 }
 
 module.exports = Student;
