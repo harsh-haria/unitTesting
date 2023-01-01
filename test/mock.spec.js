@@ -13,4 +13,13 @@ describe("-------------Mock--------------", function () {
 		studentObj.getExternal(42);
 		mock.verify();
 	});
+
+	it("successufully mock the student class and verify getInternal function", () => {
+		var mock = sinon.mock(studentObj);
+		var expt = mock.expects("getInternal");
+		expt.exactly(1);
+		expt.withArgs(50);
+		studentObj.getInternal(50);
+		mock.verify();
+	});
 });

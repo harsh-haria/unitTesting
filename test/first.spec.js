@@ -25,7 +25,6 @@ describe("--------General methods--------", () => {
 				countryCode: 91,
 				mobile: [1231231234],
 			},
-
 			status: true,
 		};
 		it("should have an property named age", () => {
@@ -42,3 +41,8 @@ describe("--------General methods--------", () => {
 		});
 	});
 });
+
+//summary
+// stubs: can be used to get predefined values for a output of a function
+// spis: can be used to spy on a function to watch its behaviour
+// mocks: can be used to mock how a function bahaves

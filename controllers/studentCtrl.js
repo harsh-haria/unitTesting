@@ -29,6 +29,22 @@ class Student {
 		var finalSum = external + internal + 10;
 		return finalSum;
 	}
+
+	getData() {
+		return new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve(10);
+			}, 1500);
+		});
+	}
+
+	getDataWithTimeout() {
+		return new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve(10);
+			}, 10000);
+		});
+	}
 }
 
 module.exports = Student;
