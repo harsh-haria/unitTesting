@@ -1,3 +1,5 @@
+const { default: axios } = require("axios");
+
 class Student {
 	constructor() {}
 
@@ -42,7 +44,20 @@ class Student {
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
 				resolve(10);
-			}, 10000);
+			}, 2500);
+		});
+	}
+
+	thirdPartyApi() {
+		return new Promise((resolve, reject) => {
+			axios
+				.get("https://dummy.restapiexample.com/api/v1/employees")
+				.then((response) => {
+					resolve(response.data);
+				})
+				.catch((error) => {
+					reject(error);
+				});
 		});
 	}
 }

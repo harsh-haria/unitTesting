@@ -26,7 +26,7 @@ describe("------------Promise------------", () => {
 	});
 
 	it("should return return right data from the promise (chaiaspromised)", async () => {
-		return expect(student.getData()).to.eventually.equal(10);
+		expect(student.getData()).to.eventually.equal(10);
 		//return gives you the time taken by the promise;
 	});
 
