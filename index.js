@@ -7,7 +7,7 @@ app.use("/user", userRoutes);
 
 // Set up the server
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
+module.exports = app.listen(port, () => {
 	console.log(`Listening on port ${port}`);
 });
 
