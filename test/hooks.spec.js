@@ -42,7 +42,7 @@ describe("=========Heading 1=========", function () {
 	});
 });
 
-describe.skip("=========Heading 1=========", function () {
+describe.skip("=========Heading 2=========", function () {
 	var data = "bird";
 
 	it("hould allow hooks2", function () {
@@ -54,7 +54,7 @@ describe.skip("=========Heading 1=========", function () {
 	});
 });
 
-describe("=========Heading 1=========", function () {
+describe("=========Heading 3=========", function () {
 	var data = 1;
 
 	it("should allow hooks3", function () {
